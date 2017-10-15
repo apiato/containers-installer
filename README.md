@@ -1,1 +1,2 @@
 # containers-installer
+The composer installer to handle repositories with type `apiato-container`. This is used by the apiato framework in oder to allow users to install "foreign" containers by using composer features.
