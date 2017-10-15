@@ -1,6 +1,6 @@
 <?php
 
-namespace JohannesSchobel\ApiatoContainerInstaller;
+namespace apiato\installer;
 
 use Composer\Package\PackageInterface;
 use Composer\Installer\LibraryInstaller;
@@ -34,5 +34,3 @@ class ContainerInstaller extends LibraryInstaller
         return ('apiato-container' === $packageType);
     }
 }
-
-?>

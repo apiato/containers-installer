@@ -1,13 +1,15 @@
 {
-    "name": "johannesschobel/apiato-container-installer",
-    "type": "composer-plugin",
-    "autoload": {
-        "psr-4": {"JohannesSchobel\\ApiatoContainerInstaller\\": "src/"}
-    },
-    "extra": {
-        "class": "JohannesSchobel\\ApiatoContainerInstaller\\ContainerInstallerPlugin"
-    },
-    "require": {
-        "composer-plugin-api": "^1.0"
+  "name": "apiato/containers-installer",
+  "type": "composer-plugin",
+  "autoload": {
+    "psr-4": {
+      "apiato\\installer\\": "src/"
     }
+  },
+  "extra": {
+    "class": "JohannesSchobel\\ApiatoContainerInstaller\\ContainerInstallerPlugin"
+  },
+  "require": {
+    "composer-plugin-api": "^1.0"
+  }
 }

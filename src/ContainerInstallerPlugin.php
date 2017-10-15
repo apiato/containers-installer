@@ -1,6 +1,6 @@
 <?php
 
-namespace JohannesSchobel\ApiatoContainerInstaller;
+namespace apiato\installer;
 
 use Composer\Composer;
 use Composer\IO\IOInterface;
@@ -23,5 +23,3 @@ class ContainerInstallerPlugin implements PluginInterface
         $composer->getInstallationManager()->addInstaller($installer);
     }
 }
-
-?>
