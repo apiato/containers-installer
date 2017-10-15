@@ -7,7 +7,7 @@
     }
   },
   "extra": {
-    "class": "JohannesSchobel\\ApiatoContainerInstaller\\ContainerInstallerPlugin"
+    "class": "apiato\\installer\\ContainerInstallerPlugin"
   },
   "require": {
     "composer-plugin-api": "^1.0"
