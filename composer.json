@@ -10,6 +10,6 @@
     "class": "apiato\\installer\\ContainerInstallerPlugin"
   },
   "require": {
-    "composer-plugin-api": "^1.0"
+    "composer-plugin-api": "^2.0"
   }
 }
