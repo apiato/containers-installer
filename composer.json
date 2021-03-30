@@ -1,15 +1,16 @@
 {
-  "name": "apiato/containers-installer",
-  "type": "composer-plugin",
-  "autoload": {
-    "psr-4": {
-      "apiato\\installer\\": "src/"
+    "description": "A Composer plugin for installing Apiato Containers (of type apiato-container).",
+    "name": "apiato/containers-installer",
+    "type": "composer-plugin",
+    "autoload": {
+        "psr-4": {
+            "apiato\\installer\\": "src/"
+        }
+    },
+    "extra": {
+        "class": "apiato\\installer\\ContainerInstallerPlugin"
+    },
+    "require": {
+        "composer-plugin-api": "^2.0"
     }
-  },
-  "extra": {
-    "class": "apiato\\installer\\ContainerInstallerPlugin"
-  },
-  "require": {
-    "composer-plugin-api": "^2.0"
-  }
 }

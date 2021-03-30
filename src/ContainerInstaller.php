@@ -12,25 +12,25 @@ use Composer\Installer\LibraryInstaller;
  */
 class ContainerInstaller extends LibraryInstaller
 {
-    /**
-     * {@inheritDoc}
-     */
-    public function getInstallPath(PackageInterface $package)
-    {
-        $containername = $package->getPrettyName();
-        $extras = json_decode(json_encode($package->getExtra()));
-        if(isset($extras->apiato->container->name)) {
-            $containername = $extras->apiato->container->name;
-        }
+	/**
+	 * {@inheritDoc}
+	 */
+	public function getInstallPath(PackageInterface $package)
+	{
+		$containerName = $package->getPrettyName();
+		$extras = json_decode(json_encode($package->getExtra()));
+		if (isset($extras->apiato->container->name)) {
+			$containerName = $extras->apiato->container->name;
+		}
+		$separator = '\\';
+		return "app" . $separator . "Modules" . $separator . $containerName;
+	}
 
-        return "app" . DIRECTORY_SEPARATOR . "Containers" . DIRECTORY_SEPARATOR . $containername;
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function supports($packageType)
-    {
-        return ('apiato-container' === $packageType);
-    }
+	/**
+	 * {@inheritDoc}
+	 */
+	public function supports($packageType)
+	{
+		return ('apiato-container' === $packageType);
+	}
 }
