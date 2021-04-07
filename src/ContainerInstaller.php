@@ -22,8 +22,7 @@ class ContainerInstaller extends LibraryInstaller
 		if (isset($extras->apiato->container->name)) {
 			$containerName = $extras->apiato->container->name;
 		}
-		$separator = '\\';
-		return "app" . $separator . "Modules" . $separator . $containerName;
+		return "app" . DIRECTORY_SEPARATOR . "Modules" . DIRECTORY_SEPARATOR . $containerName;
 	}
 
 	/**
